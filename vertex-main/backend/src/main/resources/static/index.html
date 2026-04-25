@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit my skin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <p class="greeting-sub">Good morning,</p>
+            <h1 class="greeting-main">こんにちは、Ryoさん</h1>
+            <div class="profile-icon"></div>
+        </header>
+        
+        <section class="condition-section">
+            <h2 class="section-title">今日の肌コンディション</h2>
+            <div class="condition-grid">
+                <div class="condition-card">
+                    <p class="card-label">水分量</p>
+                    <p class="card-value highlight-green">80% <span class="trend">↑</span></p>
+                </div>
+                <div class="condition-card">
+                    <p class="card-label">皮脂バランス</p>
+                    <p class="card-value highlight-yellow">45% <span class="trend">↓</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="routine-section">
+            <div class="section-header">
+                <h2 class="section-title">あなたへの推奨ルーティン</h2>
+                <a href="#" class="see-all">すべて見る ›</a>
+            </div>
+            
+            <div class="item-card" onclick="location.href='detail.html'">
+                <div class="item-image placeholder-img1"></div>
+                <div class="item-info">
+                    <span class="category-tag">スキンケア</span>
+                    <h3 class="item-name">ハイドレーティング セラム</h3>
+                    <p class="item-price">¥4,200 <span class="reason">🌿 セラミドNP配合</span></p>
+                </div>
+                <button class="btn-apply">適用</button>
+            </div>
+
+            <div class="item-card" onclick="location.href='detail.html'">
+                <div class="item-image placeholder-img2"></div>
+                <div class="item-info">
+                    <span class="category-tag">ヘアケア</span>
+                    <h3 class="item-name">リペア シルクオイル</h3>
+                    <p class="item-price">¥3,800 <span class="reason">✨ ダメージ補修</span></p>
+                </div>
+                <button class="btn-apply">適用</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

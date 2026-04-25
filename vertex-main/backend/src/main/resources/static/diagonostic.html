@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>診断 - スキンナビア</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="step-header">
+            <button class="back-button">←</button>
+            <div class="progress-container">
+                <span class="step-text">STEP 2 OF 4</span>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
+            <span class="percent-text">50% Completed</span>
+        </header>
+
+        <main class="diagnostic-main">
+            <h1 class="question-title">What are your<br>concerns?</h1>
+            <p class="question-desc">パーソナライズされた提案のために、当てはまるものをすべて選択してください。</p>
+
+            <div class="ai-camera-card">
+                <div class="ai-info">
+                    <h3>AIカメラで診断する</h3>
+                    <p>顔写真を撮影するだけで、AIが約10秒で肌状態を自動解析します。</p>
+                </div>
+                <button class="btn-outline-green">📸 Analyze My Skin</button>
+            </div>
+            <div class="backend-inputs" style="margin-bottom: 32px;">
+                <h3 class="manual-title">基本情報の入力</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <input type="number" id="input-budget" placeholder="月の予算 (例: 5000) 円" style="padding: 12px; border: 1px solid #EAEAEA; border-radius: 8px;">
+                    <input type="text" id="input-allergies" placeholder="アレルギー (例: アルコール)" style="padding: 12px; border: 1px solid #EAEAEA; border-radius: 8px;">
+                    <input type="number" id="input-moisture" placeholder="水分量 (例: 20) %" style="padding: 12px; border: 1px solid #EAEAEA; border-radius: 8px;">
+                </div>
+            </div>
+
+            <h3 class="manual-title">MANUAL SELECTION</h3>
+
+            <div class="concern-grid">
+                <button class="concern-card active" data-concern="acne">
+                    <div class="card-img acne-img"></div>
+                    <h4>Acne</h4>
+                    <p>ニキビ・肌荒れ</p>
+                </button>
+                <button class="concern-card" data-concern="dryness">
+                    <div class="card-img dry-img"></div>
+                    <h4>Dryness</h4>
+                    <p>乾燥・つっぱり</p>
+                </button>
+                <button class="concern-card" data-concern="oiliness">
+                    <div class="card-img oil-img"></div>
+                    <h4>Oiliness</h4>
+                    <p>皮脂・テカリ</p>
+                </button>
+                <button class="concern-card" data-concern="redness">
+                    <div class="card-img red-img"></div>
+                    <h4>Redness</h4>
+                    <p>赤み・敏感肌</p>
+                </button>
+            </div>
+        </main>
+
+        <div class="bottom-action">
+            <button class="btn-primary">Continue</button>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

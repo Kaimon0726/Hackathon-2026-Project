@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pandas
+scikit-learn
+requests
+google-cloud-aiplatform
+google-genai
+python-dotenv

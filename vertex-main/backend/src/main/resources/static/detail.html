@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製品詳細 - Fit my skin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="step-header">
+            <button class="back-button" onclick="history.back()">←</button>
+            <h2 class="header-title">製品詳細</h2>
+            <button class="share-button">♡</button>
+        </header>
+
+        <main class="detail-main">
+            <div class="product-hero-image">
+                <div class="placeholder-hero"></div>
+            </div>
+
+            <div class="product-basic-info">
+                <span class="category-tag">スキンケア / セラム</span>
+                <h1 class="detail-product-name" id="display-name">商品名がここに入ります</h1>
+                <p class="detail-product-price">¥<span id="display-price">0</span> <span class="tax-in">(税込)
+            </div>
+
+            <section class="ai-explanation-section">
+                <div class="ai-badge">
+                    <span class="ai-sparkle">✨</span> Gemini AI Analysis
+                </div>
+                <h3 class="ai-title">なぜあなたに最適なのか？</h3>
+                <div class="ai-bubble">
+                    <p>あなたの最近の「乾燥とニキビ」という悩みに対し、この製品に含まれる**セラミドNP**が肌のバリア機能を修復します。また、**パンテノール**が炎症を抑えるため、肌荒れを防ぎながら深い潤いを与えます。今のあなたにとって、最もバランスの良い選択です。</p>
+                </div>
+            </section>
+
+            <div class="specs-grid">
+                <div class="spec-item">
+                    <span class="spec-label">主要成分</span>
+                    <span class="spec-value" id="display-ingredients" style="font-size: 12px;">解析中...</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">使用期間目安</span>
+                    <span class="spec-value"><span id="display-months">1</span>ヶ月</span>
+                </div>
+            </div>
+        </main>
+
+        <div class="bottom-action detail-actions">
+            <button class="btn-secondary">お気に入り</button>
+            <button class="btn-primary">Amazonで購入</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

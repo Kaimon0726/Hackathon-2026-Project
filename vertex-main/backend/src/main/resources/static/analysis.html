@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成分分析 - Fit my skin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="step-header">
+            <button class="back-button">←</button>
+            <h2 class="header-title">成分分析</h2>
+            <div style="width: 20px;"></div> </header>
+
+        <div class="scan-image-area">
+            </div>
+
+        <div class="analysis-card-container">
+            <div class="score-circle">
+                <span class="score-number">92<span class="score-percent">%</span></span>
+                <span class="score-label">MATCH</span>
+            </div>
+
+            <h2 class="match-title">相性スコア：非常に良好</h2>
+            <p class="match-desc">おめでとうございます！この製品はあなたの申告した肌状態に最適です。有害な成分は検出されませんでした。</p>
+
+            <div class="ingredient-section">
+                <h3 class="ingredient-title">✅ 安全な成分 (6)</h3>
+                <div class="tag-cloud">
+                    <span class="tag-safe">グリセリン</span>
+                    <span class="tag-safe">ヒアルロン酸Na</span>
+                    <span class="tag-safe">水</span>
+                    <span class="tag-safe">パンテノール</span>
+                    <span class="tag-safe">セラミドNP</span>
+                    <span class="tag-safe">アラントイン</span>
+                </div>
+            </div>
+
+            <div class="ingredient-section" style="margin-top: 24px;">
+                <h3 class="ingredient-title warning">⚠️ 注意が必要な成分 (0)</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
